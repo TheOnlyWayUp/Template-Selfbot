@@ -1,4 +1,4 @@
-import discord, aiosqlite, json
+import discord, aiosqlite, json, os
 from discord.ext import commands, tasks
 from rich.console import Console
 
