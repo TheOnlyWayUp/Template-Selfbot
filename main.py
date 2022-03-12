@@ -40,7 +40,7 @@ async def readyDatabase():
 for filename in os.listdir(f"./cogs"):
     if filename.endswith(".py"):
         try:
-            bot.load_extension(f"cogs.{category}.{filename[:-3]}")
+            bot.load_extension(f"cogs.{filename[:-3]}")
             console.log(f"[green]Cog[/green]: {filename} was successfully loaded.")
         except Exception as e:
             console.log(f"[red]Cog[/red]: {filename} could not be loaded.\nException: {e}\n---")
