@@ -7,7 +7,7 @@ from rich.console import Console
 console = Console()
 with open('config.json', 'r', encoding='utf-8') as handler:
     config = json.load(handler)
-bot = commands.Bot(prefix=config['prefix'], help_command=None, self_bot=True)
+bot = commands.Bot(command_prefix=config['prefix'], help_command=None, self_bot=True)
 
 # --- Events --- #
 
